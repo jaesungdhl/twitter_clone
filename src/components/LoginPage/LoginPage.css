@@ -1,0 +1,219 @@
+/* LoginPage Component */
+.loginPage{
+    background-color: #e6ecf0;
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+}
+/* Navbar Component */
+.navbar{
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 47px;
+    color: rgb(102, 117, 127);
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 1.1px solid rgba(0,0,0,0.20);
+    padding: 0;
+    background-color: white;
+}
+
+.navbar-container{
+    height: 100%;
+    width: 60%;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+/* Left Navbar */
+.navbar-nav{
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-item{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-link{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: rgb(102, 117, 127);
+    font-size: 13px;
+    transition: all 0.15s ease-in-out;
+}
+
+.nav-link:hover{
+    border-bottom: 2px solid #1c94e0;
+    color: #1c94e0;
+}
+
+.icon-loginPage{
+    transform: scale(1.5);
+    color:#1da1f2;
+}
+
+/* Right Navbar */
+#navbarDropdown:hover{
+    color: rgb(102, 117, 127);
+    border-bottom: none;
+    text-decoration: underline;
+}
+
+.language{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.current-language{
+    margin-right: 2.5px;
+}
+
+.dropdown-menu{
+    left: -70%;
+    padding: 10px 0 10px 0;
+}
+.triangle{
+    border: 1px solid black;
+    background-color: white;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    border: 1px solid rgba(0,0,0,.15);
+    border-right: none;
+    border-bottom: none;
+    left: 80%;
+    top: -1.2%;
+    z-index: 10;
+    transform: rotate(45deg);
+}
+
+.dropdown-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.language-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.dropdown-item{
+    font-size: 12px;
+    font-weight: normal;
+    color: #66757f;
+}
+
+/* LoginPageForm Component */
+.container{
+    width: 60%;
+    height: 50%;
+    background-color: white;
+    margin: 15px auto 15px auto;
+    padding: 0;
+}
+
+.form-container{
+    width: 70%;
+    height: 70%;
+    margin: 0 auto 0 auto;
+}
+
+.form-container > h1{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 40px 0 20px 0;
+    margin: 0;
+}
+
+.form-container > form > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-container > form > div > .loginInput{
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.form-container > form > div > .loginInput > input{
+    padding: 6px;
+    width: 280px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-container > form > div > .bottom-form-container > .login-btn{
+    background-color: #1da1f2;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    height: 2.5em;
+    width: 6em;
+    margin-right: 10px;
+}
+
+.form-container > form > div > .bottom-form-container > .login-btn:hover{
+    background-color: #006dbf;
+}
+
+.checkbox{
+    width: 4%;
+}
+
+.login-page-forgot-password{
+    color: #1da1f2;
+}
+
+.login-page-forgot-password:hover{
+    color: #1da1f2;
+}
+
+.separator{
+    margin: 0 5px 0 5px;
+}
+
+.new-page-container{
+    width: 100%;
+    height: 30%;
+    background-color: #f5f8fa;
+}
+
+/* Activate-container */
+
+.activate-list{
+    width: 70%;
+    height: 100%;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.activate-list > li{
+    color: rgb(101, 119, 134);
+    font-size: 14px;
+}
+
+.activate-list > li > a{
+    margin-left: 7px;
+    color: #1c94e0;
+}
+
+.activate-list > li > a:hover{
+    color: #1c94e0;
+}
+/* Universal */
+li{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-start;
+}
