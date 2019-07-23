@@ -150,7 +150,7 @@
     font-weight: 400;
 }
 
-.form-container > form > div > .bottom-form-container > .login-btn{
+.form-container > form > div > .bottom-form-container > a > .login-btn{
     background-color: #1da1f2;
     color: white;
     font-size: 14px;
@@ -160,7 +160,7 @@
     margin-right: 10px;
 }
 
-.form-container > form > div > .bottom-form-container > .login-btn:hover{
+.form-container > form > div > .bottom-form-container > a >.login-btn:hover{
     background-color: #006dbf;
 }
 

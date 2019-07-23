@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import "./PasswordResetPage.css";
 
 class ResetForm extends Component{
@@ -14,7 +15,7 @@ class ResetForm extends Component{
                                 <input id="password-reset-page-login-input" type="text"/>
                             </div>
                             <div className="bottom-form-container" id="password-reset-page-bottom-form-container">
-                                <input type="submit" class="login-btn btn btn-primary" value="Search"/>
+                                <Link to ="/account/send_password_reset"><input type="submit" class="login-btn btn btn-primary" value="Search"/></Link>
                             </div>
                         </div>
                     </form>
