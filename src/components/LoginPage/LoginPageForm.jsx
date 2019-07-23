@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import {Link} from "react-router-dom";
 import "./LoginPage.css";
 
 class LoginPageForm extends Component{
@@ -21,7 +22,7 @@ class LoginPageForm extends Component{
                             </div>
                             <div className="bottom-form-container">
                                 <input type="submit" class="login-btn btn btn-primary" value="Log in"/>
-                                <input type="checkbox" name="remember-me" class="checkbox"/><label for="remember-me">Remember Me</label><span class="separator">·</span><a class="login-page-forgot-password" href="#">Forgot password?</a>
+                                <input type="checkbox" name="remember-me" class="checkbox"/><label for="remember-me">Remember Me</label><span class="separator">·</span><Link to="/account/begin_password_reset"><a class="login-page-forgot-password" href="#">Forgot password?</a></Link>
                             </div>
                         </div>
                     </form>
