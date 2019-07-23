@@ -3,13 +3,13 @@ import React from 'react';
 // import './App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import WelcomePage from "./WelcomePage/WelcomePage";
-// import SignIn from "./components/sign-in";
+import LoginPage from "./LoginPage/LoginPage";
 
 const App = (props) => {
   return (
     <Router>
-      <Route path="/" component={WelcomePage} />
-      {/* <Route path="/signin" component={SignIn} /> */}
+      <Route exact path="/" component={WelcomePage} />
+      <Route exact path="/login" component={LoginPage} />
     </Router>
   );
 }
