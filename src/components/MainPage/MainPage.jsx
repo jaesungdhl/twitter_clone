@@ -1,16 +1,16 @@
 import React, {Component} from "react";
 import ProfileCard from "./ProfileCard";
-// import LeftNav from "../components/left-nav";
+import LeftNav from "./left-nav";
 // import RightContainer from "../components/right-container";
 // import TopNav from "../components/top-nav";
 
 class MainPage extends Component{
   render(){
     return (
-      <div>
+      <div className="main-page">
+        <LeftNav />
         <ProfileCard />
-      {/* <LeftNav />
-      <RightContainer />
+      {/* <RightContainer />
       <TopNav /> */}
       </div>
     )
