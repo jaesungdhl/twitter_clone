@@ -6,6 +6,7 @@ import WelcomePage from "./WelcomePage/WelcomePage";
 import LoginPage from "./LoginPage/LoginPage";
 import PasswordResetPage from "./PasswordResetPage/PasswordResetPage";
 import PasswordSendPage from "./PasswordResetPage/PasswordSendPage";
+import PasswordSentPage from "./PasswordResetPage/PasswordSentPage";
 
 const App = (props) => {
   return (
@@ -14,6 +15,7 @@ const App = (props) => {
       <Route exact path="/login" component={LoginPage} />
       <Route exact path="/account/begin_password_reset" component={PasswordResetPage}/>
       <Route exact path="/account/send_password_reset" component={PasswordSendPage}/>
+      <Route exact path="/account/reset_password_sent" component={PasswordSentPage}/>
     </Router>
   );
 }

@@ -13,7 +13,7 @@ const PasswordSendForm = (props) => {
                             <label for="correct-account"><input id="password-send-page-login-input" name="correct-account" type="radio" checked/>Email a link to <strong>ja********@n****.***</strong></label>
                         </div>
                         <div className="bottom-form-container" id="password-reset-page-bottom-form-container">
-                            <Link to ="/account/send_password_reset"><input type="submit" class="login-btn btn btn-primary" value="Continue" style={{width: "7em"}}/></Link>
+                            <Link to ="/account/reset_password_sent"><input type="submit" class="login-btn btn btn-primary" value="Continue" style={{width: "7em"}}/></Link>
                         </div>
                     </div>
                 </form>
