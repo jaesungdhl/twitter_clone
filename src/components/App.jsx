@@ -4,12 +4,18 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import WelcomePage from "./WelcomePage/WelcomePage";
 import LoginPage from "./LoginPage/LoginPage";
+import PasswordResetPage from "./PasswordResetPage/PasswordResetPage";
+import PasswordSendPage from "./PasswordResetPage/PasswordSendPage";
+import PasswordSentPage from "./PasswordResetPage/PasswordSentPage";
 
 const App = (props) => {
   return (
     <Router>
       <Route exact path="/" component={WelcomePage} />
       <Route exact path="/login" component={LoginPage} />
+      <Route exact path="/account/begin_password_reset" component={PasswordResetPage}/>
+      <Route exact path="/account/send_password_reset" component={PasswordSendPage}/>
+      <Route exact path="/account/reset_password_sent" component={PasswordSentPage}/>
     </Router>
   );
 }
